@@ -1,0 +1,11 @@
+version: '3'
+
+services: 
+    nodeapp:
+        container_name: nodeapp
+        build: ./node
+        volumes: 
+            - ../app:/app
+        ports: 
+            - "3000:3000"
+        tty: true
